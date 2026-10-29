@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ask Doctor Gemini 🩺</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Ask Doctor Gemini 🩺</h1>
+        <p class="sub">Quick, general health info — not medical advice.</p>
+      </header>
+
+      <main class="chat-container">
+        <div id="chat" class="chat"></div>
+
+        <div class="composer">
+          <input id="input" type="text" placeholder="Type your question..." autocomplete="off" />
+          <button id="send">Send</button>
+        </div>
+      </main>
+
+      <footer class="footer">Powered by Gemini API</footer>
+    </div>
+
+    <template id="message-user">
+      <div class="message user">
+        <div class="bubble"></div>
+      </div>
+    </template>
+
+    <template id="message-gemini">
+      <div class="message gemini">
+        <div class="bubble"></div>
+      </div>
+    </template>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
